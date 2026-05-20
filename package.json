@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "node node_modules/typescript/bin/tsc -b && node node_modules/vite/bin/vite.js build",
     "preview": "vite preview",
     "lint": "eslint ."
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "axios": "^1.16.1",
+    "lubricants-monorepo": "file:..",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.76.0",
